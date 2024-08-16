@@ -26,6 +26,7 @@ requirements:
     - r-base
     - r-brew
     - r-crosstalk
+    - r-ggplot2
     - r-glue
     - r-htmltools
     - r-metalite
@@ -33,10 +34,12 @@ requirements:
     - r-reactr
     - r-reactable
     - r-rlang
+    - r-uuid
   run:
     - r-base
     - r-brew
     - r-crosstalk
+    - r-ggplot2
     - r-glue
     - r-htmltools
     - r-metalite
@@ -44,6 +47,7 @@ requirements:
     - r-reactr
     - r-reactable
     - r-rlang
+    - r-uuid
 
 test:
   commands:
