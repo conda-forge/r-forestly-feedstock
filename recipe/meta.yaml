@@ -1,4 +1,4 @@
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/forestly_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/forestly/forestly_{{ version }}.tar.gz
-  sha256: bd8d56038a8ab68fbd7d8057352c66e9cb6f577336feae36c712525b17221646
+  sha256: 618c2f262a39521f94ecd03a9cd67c1e85256357b929ce3591543e5ec455abbf
 
 build:
   number: 0
