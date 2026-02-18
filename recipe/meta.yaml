@@ -1,4 +1,4 @@
-{% set version = "0.1.3" %}
+{% set version = "0.1.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/forestly_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/forestly/forestly_{{ version }}.tar.gz
-  sha256: 623855290f7ac5ae0613af67008726e4889467dc0e2454f3a46cfacb08261045
+  sha256: 60b6dfe01a6b1eeebbe00aeffc9191f4bc85335c976429cd99149ea80838a730
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -57,8 +57,8 @@ test:
 about:
   home: https://CRAN.R-project.org/package=forestly
   license: GPL-3.0-or-later
-  summary: Interactive forest plot for clinical trial safety analysis using 'metalite', 'reactable', 'plotly', and Analysis Data Model (ADaM) datasets. Includes functionality for adverse event filtering, incidence-based group filtering, hover-over reveals, and search and sort operations. The workflow allows for metadata
-    construction, data preparation, output formatting, and interactive plot generation.
+  summary: Interactive forest plot for clinical trial safety analysis using 'metalite', 'reactable', 'plotly', and Analysis Data Model (ADaM) datasets. Includes functionality for adverse event filtering, incidence-based group filtering, hover-over reveals, and search and sort operations. The workflow allows for 
+    metadata construction, data preparation, output formatting, and interactive plot generation.
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
